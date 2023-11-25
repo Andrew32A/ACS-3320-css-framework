@@ -1,0 +1,61 @@
+/* SimplicityCSS - Minimalist CSS Framework */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: underline dotted;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+}
