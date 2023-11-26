@@ -107,11 +107,16 @@ abbr {
   cursor: help;
 }
 
+/* code block */
 code {
-  font-family: monospace;
-  padding: 0.2em 0.4em;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  padding: 10px;
   border-radius: 4px;
-  font-size: 0.95em;
+  display: block;
+  white-space: pre-wrap;
+  overflow-x: auto;
 }
 
 /* list */
