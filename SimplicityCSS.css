@@ -109,6 +109,7 @@ input[type="radio"] {
   margin-right: 0.5em;
 }
 
+/* button styles with animations */
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -118,7 +119,8 @@ input[type="reset"] {
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: buttonHoverAnimation 5s infinite alternate;
 }
 
 button:hover,
@@ -127,6 +129,16 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: #025aa5;
   border-color: #fff;
+  transform: translateY(-2px);
+}
+
+@keyframes buttonHoverAnimation {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
 }
 
 /* tables */
