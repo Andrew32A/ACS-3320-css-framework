@@ -1,45 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Framework Starter Sample</title>
     <link rel="stylesheet" href="SimplicityCSS.css" />
-    <style>
-      /* Additional CSS for this page */
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #fff;
-        background-color: #333;
-        margin: 0;
-        padding: 0;
-      }
-      /* Add more specific styles here if needed */
-    </style>
   </head>
-  <body>
+  <!-- Page Wraper -->
+  <body class="dark">
     <!-- Page Navigation -->
-    <nav class="navbar">
+    <div class="navbar">
       <ul>
         <li><h1 class="title">SimplicityCSS</h1></li>
+        <!-- <li><a href="#colors">Colors</a></li> -->
         <li><a href="#navbar">Navbar</a></li>
         <li><a href="#headings">Headings</a></li>
         <li><a href="#type">Type</a></li>
         <li><a href="#links">Links</a></li>
-        <li><a href="#colors">Colors</a></li>
+        <li><a href="#colors">Links</a></li>
         <li><a href="#forms">Forms</a></li>
         <li><a href="#buttons">Buttons</a></li>
+        <!-- <li><a href="#footer">Footer</a></li> -->
       </ul>
+
       <ul>
         <li><a href="link/to/your/framework/repo">GitHub</a></li>
       </ul>
-    </nav>
+    </div>
 
-    <!-- Main content -->
+    <!-- main content -->
     <div class="container main">
+      <!-- --------------------------- -->
       <!-- Headings -->
       <section id="headings">
         <h1>Headings</h1>
@@ -49,25 +37,57 @@
         <h4>H4 Heading</h4>
         <h5>H5 Heading</h5>
         <h6>H6 Heading</h6>
-      </section>
 
+        <pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+				</code>
+			</pre>
+      </section>
+      <!-- --------------------------- -->
+
+      <!-- --------------------------- -->
       <!-- Paragraph Style -->
       <section id="type">
         <h1>Paragraph styles</h1>
         <p>
           This is the <strong>strong tag</strong> in a paragraph. This is the
-          <em>em tag in a paragraph</em>, elements such as
+          <em>em tag in a paragraph</em>, elements such as &lt;strong&gt; and
+          &lt;em&gt; are inline. Here is an example of the
           <abbr>abbreviation tag.</abbr> You'd use abbr for things like
           <abbr title="Hyper Text Markup Language">HTML</abbr> and
           <abbr title="Cascading Stylesheets">CSS</abbr>.
         </p>
-      </section>
 
+        <pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+      </section>
+      <!-- ----------------------------- -->
+
+      <!-- --------------------------- -->
       <!-- Button Styles -->
       <section id="buttons">
         <h2>Buttons</h2>
+
         <p>This is your average button. You might want to click it.</p>
+
         <p><button>Submit</button></p>
+
+        <pre>
+				<code>
+&lt;button&gt;Submit&lt;/button&gt;
+				</code>
+			</pre>
+
         <p>
           This button has consequences. You might want to think twice before
           clicking.
@@ -79,19 +99,43 @@
           </button>
           <button style="--background-color: #6bc253">Go!</button>
         </p>
-      </section>
 
+        <pre>
+				<code>
+&lt;button 
+	style=&quot;--weight: bold; 
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button 
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
+      </section>
+      <!-- --------------------------- -->
+
+      <!-- --------------------------- -->
       <!-- Link styles -->
-      <section id="links">
+      <section>
         <h2>Links</h2>
         <p>
           This <a href="#">paragraph</a> contains a couple
           <a href="#">links</a> to show off their styles in context.
         </p>
-      </section>
 
+        <pre>
+				<code>
+&lt;p&gt;This &lt;a href=&quot;#&quot;&gt;paragraph&lt;/a&gt; contains a couple &lt;a
+href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p&gt;
+				</code>
+			</pre>
+      </section>
+      <!-- --------------------------- -->
+
+      <!-- --------------------------- -->
       <!-- Form Styles -->
-      <section id="forms">
+      <section>
         <h2>Forms and controls</h2>
         <form>
           <label>
@@ -125,14 +169,35 @@
             <span>Click Switch no JS</span>
           </div>
 
-          <label class="control-checkbox">
-            One
+          <label class="control-checkbox"
+            >One
             <input type="checkbox" checked="checked" />
             <span></span>
           </label>
         </form>
+
+        <h3>Input and label</h3>
+        <pre>
+				<code>
+&lt;label&gt;
+&#x9;&lt;span&gt;Text:&lt;/span&gt;
+&#x9;&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
+&lt;/label&gt;
+				</code>
+			</pre>
+
+        <h3>Checkbox and label</h3>
+        <pre>
+				<code>
+&lt;label class=&quot;control-checkbox&quot;&gt;One
+&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
+&#x9;&lt;span&gt;&lt;/span&gt;
+&lt;/label&gt;
+				</code>
+						</pre>
       </section>
 
+      <!-- --------------------------- -->
       <!-- Colors -->
       <section id="colors">
         <h1>Colors</h1>
@@ -156,10 +221,13 @@
           >
             --color-dark
           </div>
+
           <div style="background-color: var(--color-light)">--color-light</div>
+
           <div style="background-color: var(--color-md-light)">
             --color-md-light
           </div>
+
           <div
             style="
               background-color: var(--color-dark);
@@ -168,6 +236,7 @@
           >
             --color-md-dark
           </div>
+
           <div
             style="
               background-color: var(--color-primary);
@@ -176,6 +245,7 @@
           >
             --color-primary
           </div>
+
           <div
             style="
               background-color: var(--color-info);
@@ -184,6 +254,7 @@
           >
             --color-info
           </div>
+
           <div
             style="
               background-color: var(--color-success);
@@ -192,6 +263,7 @@
           >
             --color-success
           </div>
+
           <div
             style="
               background-color: var(--color-danger);
@@ -200,6 +272,7 @@
           >
             --color-danger
           </div>
+
           <div style="background-color: var(--color-callout)">
             --color-callout
           </div>
@@ -208,14 +281,18 @@
           </div>
         </div>
       </section>
+      <!-- --------------------------- -->
 
-      <!-- Navbar styles -->
+      <!-- --------------------------- -->
+      <!-- Nav Bar styles -->
       <section id="navbar">
         <h1>Navbar</h1>
+
         <h2>Navbar 1</h2>
         <p>A navbar with all elements on the left.</p>
         <p>Use a single child under <code>div.navbar</code>.</p>
-        <nav class="navbar">
+
+        <div class="navbar">
           <ul>
             <li><h1 class="title">TITLE</h1></li>
             <li><a href="#">Link 1</a></li>
@@ -223,34 +300,73 @@
             <li><a href="#">Link 3</a></li>
             <li><a href="#">Link 4</a></li>
           </ul>
-        </nav>
+        </div>
+
+        <div>
+          <pre class="code-block">
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+        </div>
+      </section>
+
+      <!-- --------------------------- -->
+      <!-- Footer Styles -->
+      <section id="footers">
+        <h2>Page Footer</h2>
+        <div class="page-footer">
+          <ul>
+            <li><h3>Column 1</h3></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+
+          <ul>
+            <li><h3>Column 2</h3></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+
+          <ul>
+            <li><h3>Column 3</h3></li>
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
       </section>
     </div>
+    <div class="page-footer">
+      <ul>
+        <li><h3>Content</h3></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#navbar">Navbar</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#type">Type</a></li>
+        <li><a href="#forms">forms</a></li>
+      </ul>
 
-    <!-- Page Footer -->
-    <footer class="page-footer">
-      <div class="page-footer">
-        <ul>
-          <li><h3>Column 1</h3></li>
-          <li><a>Item 1</a></li>
-          <li><a>Item 2</a></li>
-          <li><a>Item 3</a></li>
-        </ul>
+      <ul>
+        <li><h3>Resources</h3></li>
+        <li><a href="">CSS Tricks</a></li>
+        <li><a href="">CSS Tricks</a></li>
+      </ul>
 
-        <ul>
-          <li><h3>Column 2</h3></li>
-          <li><a>Item 1</a></li>
-          <li><a>Item 2</a></li>
-          <li><a>Item 3</a></li>
-        </ul>
-
-        <ul>
-          <li><h3>Column 3</h3></li>
-          <li><a>Item 1</a></li>
-          <li><a>Item 2</a></li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
-    </footer>
+      <ul>
+        <li><h3>Contact</h3></li>
+        <li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+      </ul>
+    </div>
   </body>
 </html>
