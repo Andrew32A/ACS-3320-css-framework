@@ -11,8 +11,8 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+  color: #fff;
+  background-color: #333;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: inherit;
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-weight: 600;
@@ -76,7 +76,6 @@ abbr {
 
 code {
   font-family: monospace;
-  background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-size: 0.95em;
@@ -101,6 +100,8 @@ textarea {
   border-radius: 4px;
   width: 100%;
   margin-bottom: 1em;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 input[type="checkbox"],
@@ -114,10 +115,10 @@ input[type="reset"] {
   background-color: #0275d8;
   color: white;
   padding: 0.6em 1.2em;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 button:hover,
@@ -125,6 +126,7 @@ button:focus,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: #025aa5;
+  border-color: #fff;
 }
 
 /* tables */
@@ -145,7 +147,53 @@ th {
   background-color: #f5f5f5;
 }
 
-/* utility classes */
+/* navigation bar */
+.navbar {
+  background-color: #444;
+  padding: 0.5em 1em;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  margin-right: 1em;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* main content */
+.container.main {
+  padding: 1em;
+}
+
+/* footer */
+.page-footer {
+  background-color: #444;
+  color: #fff;
+  padding: 1em;
+}
+.page-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.page-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
+/* utility and custom classes */
 .text-center {
   text-align: center;
 }
