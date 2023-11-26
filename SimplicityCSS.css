@@ -5,7 +5,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -13,8 +16,12 @@ body {
   line-height: 1.5;
   color: #fff;
   background-color: #333;
-  margin: 0;
-  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 /* typography */
@@ -32,20 +39,25 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
 }
+
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
+
 h3 {
   font-size: 1.5em;
 }
+
 h4 {
   font-size: 1.25em;
 }
+
 h5 {
   font-size: 1em;
 }
+
 h6 {
   font-size: 0.875em;
 }
@@ -65,6 +77,7 @@ a:focus {
 strong {
   font-weight: bold;
 }
+
 em {
   font-style: italic;
 }
@@ -164,27 +177,32 @@ th {
   background-color: #444;
   padding: 0.5em 1em;
 }
+
 .navbar ul {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
 }
+
 .navbar li {
   margin-right: 1em;
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
 
 /* main content */
-.container.main {
-  padding: 1em;
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
 }
 
 /* footer */
@@ -193,14 +211,17 @@ th {
   color: #fff;
   padding: 1em;
 }
+
 .page-footer ul {
   list-style: none;
   padding: 0;
 }
+
 .page-footer a {
   color: #fff;
   text-decoration: none;
 }
+
 .page-footer a:hover {
   text-decoration: underline;
 }
@@ -209,40 +230,51 @@ th {
 .text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
+
 .text-left {
   text-align: left;
 }
+
 .mt-0 {
   margin-top: 0;
 }
+
 .mb-0 {
   margin-bottom: 0;
 }
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .px-1 {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .py-1 {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+
 .d-block {
   display: block;
 }
+
 .d-inline {
   display: inline;
 }
+
 .d-inline-block {
   display: inline-block;
 }
@@ -252,6 +284,7 @@ th {
   body {
     font-size: 14px;
   }
+
   h1 {
     font-size: 2em;
   }
