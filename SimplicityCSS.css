@@ -11,14 +11,15 @@
 
 /* root */
 :root {
-  --color-background: #0f172a;
-  --color-background-alt: #0f172a;
-  --color-foreground: #333333;
+  --color-background: #0f1626;
+  --color-background-alt: #1e293b;
+  --color-foreground: #1e293b;
   --color-dark: #000000;
   --color-light: #fff;
   --color-md-light: #94a3b8;
   --color-md-dark: #666666;
-  --color-primary: #007bff;
+  --color-primary: #e2e8f0;
+  --color-secondary: #a4a3b8;
   --color-info: #38bdf2;
   --color-success: #28a745;
   --color-danger: #dc3545;
@@ -32,14 +33,14 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--color-md-light);
-  background-color: #333;
+  color: var(--color-secondary);
+  background-color: var(--color-background);
 }
 
 /* section */
 section {
   padding: 2em;
-  background-color: var(--color-md-dark);
+  background-color: var(--color-foreground);
   border: 1px solid black;
   border-radius: 4px;
   position: relative;
@@ -60,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-light);
+  color: var(--color-primary);
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-weight: 600;
@@ -120,7 +121,7 @@ abbr {
 
 /* code block */
 code {
-  background-color: var(--color-background-alt);
+  background-color: var(--color-background);
   color: var(--color-info);
   font-family: "Consolas", "Monaco", "Courier New", monospace;
   padding: 10px;
@@ -244,7 +245,7 @@ th {
 
 /* navigation bar styles */
 .navbar {
-  background-color: #444;
+  background-color: var(--color-foreground);
   padding: 0.5em 1em;
 }
 
@@ -277,7 +278,7 @@ th {
 
 /* footer */
 .page-footer {
-  background-color: #444;
+  background-color: var(--color-foreground);
   color: #fff;
   padding: 1em;
 }
