@@ -99,8 +99,8 @@ You can customize the default colors and styles defined in SimplicityCSS by modi
 
 ```css
 :root {
---color-background: #0f1626;
---color-background-alt: #1e293b;
-/_ Add more custom variables here _/
+  --color-background: #0f1626;
+  --color-background-alt: #1e293b;
+  /* Add more custom variables here */
 }
 ```
