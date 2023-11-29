@@ -6,8 +6,8 @@
   </head>
   <body class="dark">
     <div class="navbar">
-      <ul>
-        <li><h1 class="title">SimplicityCSS</h1></li>
+      <h1 class="title flex justify-center">SimplicityCSS</h1>
+      <ul class="flex justify-center">
         <li><a href="#navbar">Navbar</a></li>
         <li><a href="#headings">Headings</a></li>
         <li><a href="#type">Type</a></li>
@@ -16,14 +16,18 @@
         <li><a href="#forms">Forms</a></li>
         <li><a href="#buttons">Buttons</a></li>
       </ul>
-      <ul>
-        <li><a href="link/to/your/framework/repo">GitHub</a></li>
+      <ul class="flex justify-center">
+        <li>
+          <a href="https://github.com/Andrew32A/ACS-3320-css-framework"
+            >GitHub</a
+          >
+        </li>
       </ul>
     </div>
 
     <div class="container main">
       <section id="headings">
-        <h1 class="h1">Headings</h1>
+        <h1 class="h1 flex justify-center">Headings</h1>
         <h1>H1 Heading</h1>
         <h2>H2 Heading</h2>
         <h3>H3 Heading</h3>
@@ -44,7 +48,7 @@
       </section>
 
       <section id="type">
-        <h1 class="h1">Paragraph styles</h1>
+        <h1 class="h1 flex justify-center">Paragraph styles</h1>
         <p>
           This is the <strong>strong tag</strong> in a paragraph. This is the
           <em>em tag in a paragraph</em>, elements such as &lt;strong&gt; and
@@ -61,7 +65,7 @@
       </section>
 
       <section id="buttons">
-        <h2 class="h2">Buttons</h2>
+        <h2 class="h2 flex justify-center">Buttons</h2>
         <p>This is your average button. You might want to click it.</p>
         <p><button class="button">Submit</button></p>
         <pre>
@@ -87,7 +91,7 @@
       </section>
 
       <section id="links">
-        <h2 class="h2">Links</h2>
+        <h2 class="h2 flex justify-center">Links</h2>
         <p>
           This <a href="#" class="link">paragraph</a> contains a couple
           <a href="#" class="link">links</a> to show off their styles in
@@ -101,7 +105,7 @@
       </section>
 
       <section id="forms">
-        <h2 class="h2">Forms and controls</h2>
+        <h2 class="h2 flex justify-center">Forms and controls</h2>
         <form>
           <label>
             <span class="form-label">Text:</span>
@@ -170,8 +174,8 @@
       </section>
 
       <section id="colors">
-        <h1 class="h1">Colors</h1>
-        <div class="color-grid">
+        <h1 class="h1 flex justify-center">Colors</h1>
+        <div class="color-grid grid grid-cols-4 grid-gap-4">
           <div
             class="color-box"
             style="background-color: var(--color-background); color: white"
@@ -248,10 +252,16 @@
       </section>
 
       <section id="navbar">
-        <h1 class="h1">Navbar</h1>
+        <h1 class="h1 flex justify-center">Navbar</h1>
         <h2 class="h2">Navbar 1</h2>
         <p>A navbar with all elements on the left.</p>
-        <p>Use a single child under <code>div.navbar</code>.</p>
+        <p>Use a single child under</p>
+        <div>
+          <pre class="code-block">
+          <code>div.navbar</code>
+        </pre
+          >
+        </div>
         <div class="navbar">
           <ul>
             <li><h1 class="title">TITLE</h1></li>
@@ -279,8 +289,8 @@
       </section>
 
       <section id="footers">
-        <h2 class="h2">Page Footer</h2>
-        <div class="page-footer">
+        <h2 class="h2 flex justify-center">Page Footer</h2>
+        <div class="page-footer grid grid-cols-3">
           <ul>
             <li><h3 class="h3">Column 1</h3></li>
             <li><a class="link">Item 1</a></li>
@@ -302,8 +312,8 @@
         </div>
       </section>
     </div>
-    <div class="page-footer">
-      <ul>
+    <div class="page-footer grid grid-cols-3">
+      <ul class="">
         <li><h3 class="h3">Content</h3></li>
         <li><a href="#colors" class="link">Colors</a></li>
         <li><a href="#navbar" class="link">Navbar</a></li>
@@ -319,7 +329,9 @@
       <ul>
         <li><h3 class="h3">Contact</h3></li>
         <li>
-          <a href="https://github.com/soggybag/frmwrk-css" class="link"
+          <a
+            href="https://github.com/Andrew32A/ACS-3320-css-framework"
+            class="link"
             >GitHub</a
           >
         </li>
